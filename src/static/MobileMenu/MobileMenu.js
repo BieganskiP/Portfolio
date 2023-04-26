@@ -16,7 +16,6 @@ export default function MobileMenu() {
   };
 
   const isDesktop = useMediaQuery({ minWidth: 769 });
-
   React.useEffect(() => {
     if (isDesktop && isActive) {
       dispatch(toggleMenu(false));

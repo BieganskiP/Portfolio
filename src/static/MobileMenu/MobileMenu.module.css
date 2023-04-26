@@ -25,5 +25,5 @@
 }
 
 .active {
-  color: black;
+  color: var(--pink);
 }

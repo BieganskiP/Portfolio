@@ -1,0 +1,10 @@
+
+.link {
+  transition: all 0.25s ease-out;
+  color: var(--white);
+}
+
+.link:hover {
+  scale: 1.1;
+  color: var(--pink);
+}

@@ -1,13 +1,9 @@
-.active {
-  color: var(--pink);
-}
-
 .link {
   font-size: 1.2rem;
-
   display: inline-block;
   position: relative;
 }
+
 .link::after {
   content: "";
   position: absolute;

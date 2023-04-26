@@ -7,7 +7,7 @@ export default function Nav() {
   const location = useLocation();
 
   return (
-    <div className="flex gap-4 ">
+    <>
       <Link
         to="/"
         className={`${css.link} ${location.pathname === "/" ? css.active : ""}`}
@@ -22,14 +22,7 @@ export default function Nav() {
       >
         About me
       </Link>
-      <Link
-        to="/contacts"
-        className={`${css.link} ${
-          location.pathname === "/contacts" ? css.active : ""
-        }`}
-      >
-        Contacts
-      </Link>
+
       <Link
         to="/projects"
         className={`${css.link} ${
@@ -38,6 +31,6 @@ export default function Nav() {
       >
         Projects
       </Link>
-    </div>
+    </>
   );
 }

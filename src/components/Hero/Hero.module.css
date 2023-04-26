@@ -1,0 +1,22 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.subTitle,
+.title {
+  color: var(--white);
+  white-space: nowrap;
+  padding: 0rem clamp(1rem, 2vw, 3rem);
+
+  margin: 0rem;
+  z-index: 3;
+}
+
+.title {
+  font-size: clamp(1.5rem, 10vw, 3rem);
+}
+.subTitle {
+  font-size: clamp(0.9rem, 5vw, 1.5rem);
+}

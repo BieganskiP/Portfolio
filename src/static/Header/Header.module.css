@@ -1,0 +1,33 @@
+.container {
+  display: flex;
+  width: 100%;
+  border-bottom: var(--borderColor) solid 1px;
+}
+.section {
+  border-left: var(--borderColor) solid 1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 0.5rem;
+}
+
+.logo,
+.nav {
+  flex-basis: calc(100% / 3);
+}
+.social,
+.contact {
+  flex-grow: 1;
+}
+.nav {
+  gap: 1rem;
+}
+.social {
+  gap: 1em;
+}
+.logo {
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 1;
+  max-width: 15ch;
+}

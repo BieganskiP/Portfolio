@@ -28,7 +28,7 @@ export default function Hamburger() {
 
   return (
     <div
-      className={`${css.menuButton} ${activeClass} flex content-center items-center`}
+      className={`${css.menuButton} ${activeClass}`}
       onClick={handleMenuClick}
     >
       <span className={`${css.bar}`}></span>
