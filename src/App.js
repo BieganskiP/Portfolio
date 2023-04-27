@@ -7,7 +7,7 @@ import Footer from "./static/Footer/Footer";
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/portfolio">
       <Header />
       <AnimatedRoutes />
       <Footer />
