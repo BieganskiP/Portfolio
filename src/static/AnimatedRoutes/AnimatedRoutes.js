@@ -6,6 +6,8 @@ import About from "../../pages/About/About";
 import Contacts from "../../pages/Contacts/Contacts";
 import Projects from "../../pages/Projects/Projects";
 
+import css from "./AnimatedRoutes.module.css";
+
 function AnimatedRoutes() {
   const location = useLocation();
   const transitions = useTransition(location, {
@@ -19,7 +21,7 @@ function AnimatedRoutes() {
   });
 
   return transitions((style, item) => (
-    <animated.div style={style}>
+    <animated.div style={style} className={css.container}>
       <Routes location={item}>
         <Route element={<HomePage />} path="/"></Route>
         <Route element={<About />} path="/about"></Route>

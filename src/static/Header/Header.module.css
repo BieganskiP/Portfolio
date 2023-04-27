@@ -2,19 +2,22 @@
   display: flex;
   width: 100%;
   border-bottom: var(--borderColor) solid 1px;
+  z-index: 2;
+  flex-wrap: wrap;
 }
 .section {
+  border-top: var(--borderColor) solid 1px;
   border-left: var(--borderColor) solid 1px;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 1rem 0.5rem;
 }
-
-.logo,
-.nav {
-  flex-basis: calc(100% / 3);
+.logo {
+  width: 100%;
 }
+.logo,
+.nav,
 .social,
 .contact {
   flex-grow: 1;
@@ -29,5 +32,20 @@
   font-weight: 700;
   font-size: 1.5rem;
   line-height: 1;
-  max-width: 15ch;
+}
+
+.hamburger {
+  margin-left: auto;
+}
+
+@media (min-width: 301px) {
+  .logo {
+    width: fit-content;
+  }
+  .container {
+    flex-wrap: nowrap;
+  }
+  .section {
+    border-top: none;
+  }
 }

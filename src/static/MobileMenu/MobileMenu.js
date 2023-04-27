@@ -24,17 +24,34 @@ export default function MobileMenu() {
 
   return (
     <div className={`${css.menu} ${openClass}`}>
-      <ul>
-        <li>
-          <Link
-            to="/"
-            onClick={handleLinkClick}
-            className={location.pathname === "/" ? css.active : ""}
-          >
-            Strona Główna
-          </Link>
-        </li>
-      </ul>
+      <Link
+        to="/"
+        onClick={handleLinkClick}
+        className={location.pathname === "/" ? css.active : ""}
+      >
+        Home Page
+      </Link>
+      <Link
+        to="/about"
+        onClick={handleLinkClick}
+        className={location.pathname === "/about" ? css.active : ""}
+      >
+        About me
+      </Link>
+      <Link
+        to="/projects"
+        onClick={handleLinkClick}
+        className={location.pathname === "/projects" ? css.active : ""}
+      >
+        Projects
+      </Link>
+      <Link
+        to="/Contacts"
+        onClick={handleLinkClick}
+        className={location.pathname === "/Contacts" ? css.active : ""}
+      >
+        Contacts
+      </Link>
     </div>
   );
 }

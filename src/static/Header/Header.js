@@ -23,11 +23,11 @@ export default function Header() {
           <Nav />
         </div>
       )}
-      {!isMobile && (
-        <div className={`${css.section} ${css.social}`}>
-          <Social />
-        </div>
-      )}
+
+      <div className={`${css.section} ${css.social}`}>
+        <Social />
+      </div>
+
       {!isMobile && (
         <div className={`${css.section} ${css.contact}`}>
           <ContactSection />
