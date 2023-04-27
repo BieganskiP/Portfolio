@@ -1,5 +1,12 @@
 [
-  { "id": 1, "title": "Coming soon", "description": "Project 1 Description" },
+  {
+    "id": 1,
+    "title": "Specroll",
+    "description": "Basic website created using React and styled using CSS modules.",
+    "techStack": ["React", "React Router", "Redux", "CSS Modules"],
+    "src": ["./images/specroll-desktop.png", "./images/specroll-mobile.png"],
+    "link": "www.specroll.pl"
+  },
   { "id": 2, "title": "Coming soon", "description": "Project 2 Description" },
   { "id": 3, "title": "Coming soon", "description": "Project 3 Description" },
   { "id": 4, "title": "Coming soon", "description": "Project 4 Description" },

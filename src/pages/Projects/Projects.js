@@ -43,16 +43,33 @@ export default function Projects() {
       </div>
       <div className={css.projectDetails}>
         {transitions((style, item) => (
-          <animated.div style={style}>
-            <h2>{item.title}</h2>
-            <p>{item.description}</p>
-            {item.techStack ? (
-              <ul>
-                {item.techStack.map((tech) => (
-                  <li key={tech}>{tech}</li>
-                ))}
-              </ul>
-            ) : null}
+          <animated.div style={style} className={css.container}>
+            <h2 className={css.title}>{item.title}</h2>
+            <div className={css.text}>
+              <div>
+                <p className={css.description}>{item.description}</p>
+                <a href={item.link}>{item.title}</a>
+              </div>
+              <div className={css.tech}>
+                <h3 className={css.techTitle}>Techologies used</h3>
+                {item.techStack ? (
+                  <ul className={css.techList}>
+                    {item.techStack.map((tech) => (
+                      <li key={tech} className={css.techItem}>
+                        {tech}
+                      </li>
+                    ))}
+                  </ul>
+                ) : null}
+              </div>
+            </div>
+            <div className={css.imgContainer}>
+              {item.src
+                ? item.src.map((image) => (
+                    <img src={image} key={image} alt={image} />
+                  ))
+                : null}
+            </div>
           </animated.div>
         ))}
       </div>
