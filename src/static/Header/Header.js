@@ -1,4 +1,5 @@
 import React from "react";
+import css from "./Header.module.css";
 
 import { useMediaQuery } from "react-responsive";
 
@@ -7,8 +8,6 @@ import Nav from "../../components/Nav/Nav";
 import Social from "../../components/Social/Social";
 import Hamburger from "../../components/Hamburger/Hamburger";
 import ContactSection from "../../components/ContactSection/ContactSection";
-
-import css from "./Header.module.css";
 
 export default function Header() {
   const isMobile = useMediaQuery({ maxWidth: 769 });

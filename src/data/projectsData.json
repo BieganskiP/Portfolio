@@ -2,10 +2,10 @@
   {
     "id": 1,
     "title": "Specroll",
-    "description": "Basic website created using React and styled using CSS modules.",
+    "description": "Created the responsive SpecRoll website using React, Redux, React Router, and CSS Modules. The project demonstrates my proficiency in modern web technologies and ability to deliver user-friendly solutions, ideal for a frontend developer portfolio.",
     "techStack": ["React", "React Router", "Redux", "CSS Modules"],
     "src": ["./images/specroll-desktop.png", "./images/specroll-mobile.png"],
-    "link": "www.specroll.pl"
+    "link": "https://www.specroll.pl"
   },
   { "id": 2, "title": "Coming soon", "description": "Project 2 Description" },
   { "id": 3, "title": "Coming soon", "description": "Project 3 Description" },

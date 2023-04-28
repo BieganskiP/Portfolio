@@ -3,7 +3,6 @@
   width: 32px;
   height: 50px;
   z-index: 11;
-  
 }
 .bar {
   transition: all 250ms ease 0ms;
@@ -26,17 +25,14 @@
 .menuButton .bar:last-child {
   margin-top: 6px;
 }
-
 .menuButton.active .bar:first-child {
   transform: rotate(45deg);
   margin-top: -2px;
 }
-
 .menuButton.active .bar:nth-child(2) {
   transform: rotate(-45deg);
   margin-top: -2px;
 }
-
 .menuButton.active .bar:last-child {
   opacity: 0;
 }

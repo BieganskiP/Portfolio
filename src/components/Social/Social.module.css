@@ -1,9 +1,7 @@
-
 .link {
-  transition: all 0.25s ease-out;
+  transition: all var(--transition);
   color: var(--white);
 }
-
 .link:hover {
   scale: 1.1;
   color: var(--pink);

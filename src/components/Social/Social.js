@@ -1,5 +1,4 @@
 import React from "react";
-
 import css from "./Social.module.css";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";

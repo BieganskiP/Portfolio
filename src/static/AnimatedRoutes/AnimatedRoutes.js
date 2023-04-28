@@ -1,4 +1,6 @@
 import { Routes, Route, useLocation } from "react-router-dom";
+import css from "./AnimatedRoutes.module.css";
+
 import { useTransition, animated } from "react-spring";
 
 import HomePage from "../../pages/HomePage/HomePage";
@@ -6,9 +8,7 @@ import About from "../../pages/About/About";
 import Contacts from "../../pages/Contacts/Contacts";
 import Projects from "../../pages/Projects/Projects";
 
-import css from "./AnimatedRoutes.module.css";
-
-function AnimatedRoutes() {
+export default function AnimatedRoutes() {
   const location = useLocation();
   const transitions = useTransition(location, {
     from: { opacity: 0, transform: "translate3d(100%, 0, 0)" },
@@ -31,5 +31,3 @@ function AnimatedRoutes() {
     </animated.div>
   ));
 }
-
-export default AnimatedRoutes;

@@ -4,6 +4,7 @@
   border-bottom: var(--borderColor) solid 1px;
   z-index: 2;
   flex-wrap: wrap;
+  background-color: var(--black);
 }
 .section {
   border-top: var(--borderColor) solid 1px;
@@ -31,11 +32,9 @@
   line-height: 1;
   width: 100%;
 }
-
 .hamburger {
   margin-left: auto;
 }
-
 @media (min-width: 301px) {
   .container {
     flex-wrap: nowrap;
@@ -53,5 +52,10 @@
   }
   .logo {
     width: calc(100% / 4);
+  }
+}
+@media (min-width: 810px) {
+  .logo {
+    max-width: 25%;
   }
 }

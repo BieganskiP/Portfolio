@@ -1,9 +1,7 @@
 import React from "react";
-import { Link, useLocation } from "react-router-dom";
-import css from "./FooterNav.module.css";
+import css from "./DecorationNav.module.css";
 
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCircle } from "@fortawesome/free-solid-svg-icons";
+import { Link, useLocation } from "react-router-dom";
 
 export default function FooterNav() {
   const location = useLocation();
@@ -14,7 +12,7 @@ export default function FooterNav() {
         to="/"
         className={`${css.link} ${location.pathname === "/" ? css.active : ""}`}
       >
-        <FontAwesomeIcon icon={faCircle} />
+        <span className={css.test}>Home</span>
       </Link>
       <Link
         to="/about"
@@ -22,7 +20,7 @@ export default function FooterNav() {
           location.pathname === "/about" ? css.active : ""
         }`}
       >
-        <FontAwesomeIcon icon={faCircle} />
+        About me
       </Link>
       <Link
         to="/projects"
@@ -30,7 +28,7 @@ export default function FooterNav() {
           location.pathname === "/projects" ? css.active : ""
         }`}
       >
-        <FontAwesomeIcon icon={faCircle} />
+        Projects
       </Link>
       <Link
         to="/contacts"
@@ -38,7 +36,7 @@ export default function FooterNav() {
           location.pathname === "/contacts" ? css.active : ""
         }`}
       >
-        <FontAwesomeIcon icon={faCircle} />
+        Contacts
       </Link>
     </div>
   );

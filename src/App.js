@@ -5,6 +5,8 @@ import Header from "./static/Header/Header";
 import MobileMenu from "./static/MobileMenu/MobileMenu";
 import Footer from "./static/Footer/Footer";
 
+import DecorationNav from "./components/DecorationNav/DecorationNav";
+
 function App() {
   return (
     <BrowserRouter basename="/portfolio">
@@ -12,6 +14,7 @@ function App() {
       <AnimatedRoutes />
       <Footer />
       <MobileMenu />
+      <DecorationNav />
     </BrowserRouter>
   );
 }

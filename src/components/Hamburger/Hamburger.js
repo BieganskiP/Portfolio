@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
+import css from "./Hamburger.module.css";
 
 import { useMediaQuery } from "react-responsive";
-import css from "./Hamburger.module.css";
 import { useSelector, useDispatch } from "react-redux";
 import { toggleMenu } from "../../redux/reducers/hamburgerSlice";
 

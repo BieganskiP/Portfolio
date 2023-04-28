@@ -1,7 +1,7 @@
 import React from "react";
+import css from "./Nav.module.css";
 
 import { Link, useLocation } from "react-router-dom";
-import css from "./Nav.module.css";
 
 export default function Nav() {
   const location = useLocation();
@@ -22,7 +22,6 @@ export default function Nav() {
       >
         About me
       </Link>
-
       <Link
         to="/projects"
         className={`${css.link} ${
