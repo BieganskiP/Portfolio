@@ -6,6 +6,7 @@ import MobileMenu from "./static/MobileMenu/MobileMenu";
 import Footer from "./static/Footer/Footer";
 
 import DecorationNav from "./components/DecorationNav/DecorationNav";
+import Social from "./components/Social/Social";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <Footer />
       <MobileMenu />
       <DecorationNav />
+      <Social/>
     </BrowserRouter>
   );
 }

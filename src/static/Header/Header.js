@@ -5,7 +5,7 @@ import { useMediaQuery } from "react-responsive";
 
 import Logo from "../../components/Logo/Logo";
 import Nav from "../../components/Nav/Nav";
-import Social from "../../components/Social/Social";
+
 import Hamburger from "../../components/Hamburger/Hamburger";
 import ContactSection from "../../components/ContactSection/ContactSection";
 
@@ -22,9 +22,7 @@ export default function Header() {
           <Nav />
         </div>
       )}
-      <div className={`${css.section} ${css.social}`}>
-        <Social />
-      </div>
+
       {!isMobile && (
         <div className={`${css.section} ${css.contact}`}>
           <ContactSection />

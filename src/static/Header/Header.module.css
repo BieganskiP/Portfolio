@@ -17,7 +17,6 @@
   border-left: none;
 }
 .logo,
-.social,
 .nav,
 .contact {
   flex-grow: 1;
@@ -31,10 +30,6 @@
 .nav {
   justify-content: space-around;
   flex-basis: 100%;
-}
-.social {
-  gap: 1em;
-  flex-basis: calc(100% / 1.6);
 }
 .hamburger {
   flex-basis: calc(100% / (1.6 * 1.6));

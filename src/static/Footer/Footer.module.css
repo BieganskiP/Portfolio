@@ -1,9 +1,0 @@
-.container {
-  border-top: solid 1px var(--borderColor);
-  background-color: var(--black);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;
-  padding: 1rem;
-}
