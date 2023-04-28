@@ -45,6 +45,7 @@ export default function AnimatedRoutes() {
     keys: (location) => location.pathname,
     initial: null,
     config: { mass: 1, tension: 280, friction: 30 },
+    exitBeforeEnter: true,  
     onStart: ({ key }) => {
       setPrevLocation((prev) => {
         if (prev.pathname === key) {

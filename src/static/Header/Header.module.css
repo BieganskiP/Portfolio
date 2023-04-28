@@ -13,6 +13,9 @@
   align-items: center;
   padding: 1rem 0.5rem;
 }
+.section:first-child {
+  border-left: none;
+}
 .logo,
 .social,
 .nav,
