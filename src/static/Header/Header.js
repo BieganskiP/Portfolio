@@ -22,11 +22,9 @@ export default function Header() {
           <Nav />
         </div>
       )}
-
       <div className={`${css.section} ${css.social}`}>
         <Social />
       </div>
-
       {!isMobile && (
         <div className={`${css.section} ${css.contact}`}>
           <ContactSection />
