@@ -10,8 +10,9 @@ import HomePage from "../../pages/HomePage/HomePage";
 import About from "../../pages/About/About";
 import Contacts from "../../pages/Contacts/Contacts";
 import Projects from "../../pages/Projects/Projects";
+import Skills from "../../pages/Skills/Skills";
 
-const pageOrder = ["/", "/about", "/projects", "/contacts"];
+const pageOrder = ["/", "/about", "/projects", "/skills", "/contacts"];
 
 function getAnimationValues(currentPath, nextPath) {
   const currentPathIndex = pageOrder.indexOf(currentPath);
@@ -45,7 +46,7 @@ export default function AnimatedRoutes() {
     keys: (location) => location.pathname,
     initial: null,
     config: { mass: 1, tension: 280, friction: 30 },
-    exitBeforeEnter: true,  
+    exitBeforeEnter: true,
     onStart: ({ key }) => {
       setPrevLocation((prev) => {
         if (prev.pathname === key) {
@@ -78,8 +79,9 @@ export default function AnimatedRoutes() {
       <Routes location={phase === "leave" ? prevLocation : item}>
         <Route element={<HomePage />} path="/"></Route>
         <Route element={<About />} path="/about"></Route>
-        <Route element={<Contacts />} path="/contacts"></Route>
         <Route element={<Projects />} path="/projects"></Route>
+        <Route element={<Skills />} path="/skills"></Route>
+        <Route element={<Contacts />} path="/contacts"></Route>
       </Routes>
     </animated.div>
   ));

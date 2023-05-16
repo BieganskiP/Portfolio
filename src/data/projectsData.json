@@ -2,7 +2,7 @@
   {
     "id": 1,
     "title": "Specroll",
-    "description": "Created the responsive SpecRoll website using React, Redux, React Router, and CSS Modules. The project demonstrates my proficiency in modern web technologies and ability to deliver user-friendly solutions, ideal for a frontend developer portfolio.",
+    "description": "Fully responsive, user friendly website created using React.",
     "techStack": [
       { "tech": "React" },
       { "tech": "React Router" },

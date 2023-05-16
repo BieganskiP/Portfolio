@@ -9,7 +9,7 @@ export default function ProjectsCarousel() {
     <Carousel showThumbs={false} showStatus={false}>
       {data.map((project) => (
         <div key={project.title} className={css.container}>
-          <h3>{project.title}</h3>
+          <h3 className={css.title}>{project.title}</h3>
           <div className={css.section}>
             <p>{project.description}</p>
 

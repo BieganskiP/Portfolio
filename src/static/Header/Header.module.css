@@ -31,9 +31,7 @@
   justify-content: space-around;
   flex-basis: 100%;
 }
+.contact,
 .hamburger {
-  flex-basis: calc(100% / (1.6 * 1.6));
-}
-.contact {
   flex-basis: calc(100% / (1.6 * 1.6));
 }

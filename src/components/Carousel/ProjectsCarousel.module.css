@@ -10,5 +10,8 @@
   max-width: 600px;
   margin-inline: auto;
 }
-@media (min-width: 769px) {
+.title {
+  font-size: 1.4rem;
+  font-weight: 600;
+  text-transform: uppercase;
 }

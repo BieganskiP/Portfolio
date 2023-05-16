@@ -30,6 +30,14 @@ export default function Nav() {
       >
         Projects
       </Link>
+      <Link
+        to="/skills"
+        className={`${css.link} ${
+          location.pathname === "/skills" ? css.active : ""
+        }`}
+      >
+        Skills
+      </Link>
     </>
   );
 }

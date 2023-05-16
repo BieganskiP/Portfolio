@@ -47,6 +47,14 @@ export default function MobileMenu() {
         Projects
       </Link>
       <Link
+        to="/skills"
+        className={`${css.link} ${
+          location.pathname === "/skills" ? css.active : ""
+        }`}
+      >
+        Skills
+      </Link>
+      <Link
         to="/contacts"
         onClick={handleLinkClick}
         className={location.pathname === "/Contacts" ? css.active : ""}

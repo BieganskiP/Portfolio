@@ -7,6 +7,8 @@
 
   position: absolute;
   z-index: 5;
+  font-size: 0.8rem;
+  font-weight: 600;
 
   top: 20%;
 }
@@ -17,6 +19,8 @@
   height: 0;
   position: relative;
   translate: -80%;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
 
   transition: all var(--transition);
 }
@@ -27,6 +31,11 @@
 .active {
   border: 3px solid var(--pink);
   animation: onEnter 3000ms linear;
+}
+@media (max-width: 770px) and (orientation: landscape) {
+  .container {
+    top: 35%;
+  }
 }
 @media (min-width: 770px) {
   .container {

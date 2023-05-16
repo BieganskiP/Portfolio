@@ -7,5 +7,8 @@
   --white: #c7c7c7;
   --borderColor: #ffffff80;
 
+  --backgroundFallback: #435383;
+  --backgroundGradient: linear-gradient(330deg, #435383 0%, #060b19 50%);
+
   --transition: 0.25s ease-out;
 }

@@ -12,7 +12,7 @@ export default function FooterNav() {
         to="/"
         className={`${css.link} ${location.pathname === "/" ? css.active : ""}`}
       >
-        <span className={css.test}>Home</span>
+        Home
       </Link>
       <Link
         to="/about"
@@ -37,6 +37,14 @@ export default function FooterNav() {
         }`}
       >
         Contacts
+      </Link>
+      <Link
+        to="/skills"
+        className={`${css.link} ${
+          location.pathname === "/skills" ? css.active : ""
+        }`}
+      >
+        Skills
       </Link>
     </div>
   );
