@@ -6,19 +6,26 @@ export default function About() {
     <div className={css.container}>
       <h2 className={css.title}>Hi, I'm Patryk...</h2>
       <p className={css.text}>
-        a passionate Full Stack Developer based in Wałbrzych, Poland. My journey
-        in the world of technology started as a self-taught developer. My
-        philosophy is centered around creating interactive and powerful digital
-        experiences that effectively communicate your brand's vision. I’m
-        constantly exploring the latest technologies to stay at the forefront of
-        the rapidly evolving digital landscape.
+        a self-taught Full Stack Developer based in Poland. I embarked on my
+        journey in the world of technology out of a pure passion for solving
+        problems and creating impactful and user-friendly digital solutions.
       </p>
-      <h3 className={css.skillsTitle}>Technical Skills</h3>
-
       <p className={css.text}>
-        When I'm not coding or learning a new technology, you can find me
-        playing games or cooking.
+        My design philosophy is rooted in minimalism and sleek aesthetics, with
+        the belief that simplicity is the ultimate sophistication. I have a
+        knack for transforming complex ideas into elegant digital experiences.
       </p>
+      <p className={css.text}>
+        When I'm not behind the computer screen crafting websites and
+        applications, you'll find me lost in the captivating world of video
+        games, exploring different realms and adventures. I'm also an avid cook,
+        always ready to experiment with new recipes and flavors in the kitchen.
+      </p>
+      <p className={css.text}>
+        Life, for me, is all about balance - the logical with the creative, the
+        complex with the simple, and the virtual with the tangible.
+      </p>
+      <p className={css.text}> Welcome to my world!</p>
     </div>
   );
 }

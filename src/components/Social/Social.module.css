@@ -50,7 +50,7 @@
   display: block;
   width: 1px;
   height: 50%;
-  margin: 0px auto;
+  margin: 30px auto 0 auto;
   background-color: var(--white);
 }
 .email {
@@ -82,5 +82,8 @@
   .button:last-child {
     bottom: 0;
     height: 35px;
+  }
+  .container::after {
+    margin: 0px auto;
   }
 }

@@ -22,7 +22,7 @@ export default function Skills() {
 
   return (
     <div className={css.container}>
-      <h2 className={css.header}>Here are things I learned</h2>
+      <h2 className={css.header}>Technologies I use</h2>
       {isMobile ? (
         <div className={css.gridContainer}>
           {skillsWithIcons.map((skill) => (

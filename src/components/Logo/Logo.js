@@ -6,10 +6,5 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 export default function Logo() {
-  return (
-    <Link to="/">
-      {/* <img src={logo} alt="DevPat Logo" className={css.logo} /> */}
-      PATRYK BIEGAŃSKI
-    </Link>
-  );
+  return <Link to="/">BieganskiP</Link>;
 }

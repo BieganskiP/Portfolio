@@ -31,20 +31,20 @@ export default function FooterNav() {
         Projects
       </Link>
       <Link
-        to="/contacts"
-        className={`${css.link} ${
-          location.pathname === "/contacts" ? css.active : ""
-        }`}
-      >
-        Contacts
-      </Link>
-      <Link
         to="/skills"
         className={`${css.link} ${
           location.pathname === "/skills" ? css.active : ""
         }`}
       >
         Skills
+      </Link>
+      <Link
+        to="/contacts"
+        className={`${css.link} ${
+          location.pathname === "/contacts" ? css.active : ""
+        }`}
+      >
+        Contacts
       </Link>
     </div>
   );
