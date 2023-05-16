@@ -9,6 +9,12 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  gap: 1.5rem;
+}
+.description {
+  max-width: 900px;
+  text-align: center;
+  margin-bottom: 2rem;
 }
 .skillsTitle,
 .text {

@@ -22,6 +22,16 @@ export default function Skills() {
 
   return (
     <div className={css.container}>
+      <h2 className={css.header}>Skills</h2>
+      <p className={css.description}>
+        In the realm of digital solutions, I bring more than just technical
+        expertise. I leverage my strong communication skills and proactive
+        approach to translate client needs into functional results. Known for my
+        collaborative mindset and adaptability, I excel in team environments and
+        readily embrace new tech trends. With a keen eye for detail, I ensure
+        the delivery of polished and efficient code, contributing to a superior
+        user experience.
+      </p>
       <h2 className={css.header}>Technologies I use</h2>
       {isMobile ? (
         <div className={css.gridContainer}>
@@ -32,27 +42,13 @@ export default function Skills() {
           ))}
         </div>
       ) : (
-        <>
-          <Marquee className={css.skillsList} pauseOnHover="true" speed="50">
-            {skillsWithIcons.map((skill) => (
-              <div key={skill.index} className={css.skillItem}>
-                <i className={`${skill.icon} ${css.skillIcon}`} /> {skill.name}
-              </div>
-            ))}
-          </Marquee>
-          <Marquee
-            className={css.skillsList}
-            pauseOnHover="true"
-            speed="50"
-            direction="right"
-          >
-            {skillsWithIcons.map((skill) => (
-              <div key={skill.index} className={css.skillItem}>
-                <i className={`${skill.icon} ${css.skillIcon}`} /> {skill.name}
-              </div>
-            ))}
-          </Marquee>
-        </>
+        <Marquee className={css.skillsList} pauseOnHover="true" speed="50">
+          {skillsWithIcons.map((skill) => (
+            <div key={skill.index} className={css.skillItem}>
+              <i className={`${skill.icon} ${css.skillIcon}`} /> {skill.name}
+            </div>
+          ))}
+        </Marquee>
       )}
     </div>
   );
