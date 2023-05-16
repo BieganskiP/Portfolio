@@ -16,8 +16,16 @@
 }
 .buttons {
   display: flex;
-  justify-content: space-around;
+  gap: 3rem;
   font-size: 1rem;
+}
+
+.cta {
+  padding: 0.6rem;
+  border: 1px solid var(--borderColor);
+}
+.cta:hover {
+  cursor: pointer;
 }
 @media (min-width: 768px) {
   .title {
