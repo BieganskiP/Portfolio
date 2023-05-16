@@ -32,13 +32,27 @@ export default function Skills() {
           ))}
         </div>
       ) : (
-        <Marquee className={css.skillsList} pauseOnHover="true" speed="50">
-          {skillsWithIcons.map((skill) => (
-            <div key={skill.index} className={css.skillItem}>
-              <i className={`${skill.icon} ${css.skillIcon}`} /> {skill.name}
-            </div>
-          ))}
-        </Marquee>
+        <>
+          <Marquee className={css.skillsList} pauseOnHover="true" speed="50">
+            {skillsWithIcons.map((skill) => (
+              <div key={skill.index} className={css.skillItem}>
+                <i className={`${skill.icon} ${css.skillIcon}`} /> {skill.name}
+              </div>
+            ))}
+          </Marquee>
+          <Marquee
+            className={css.skillsList}
+            pauseOnHover="true"
+            speed="50"
+            direction="right"
+          >
+            {skillsWithIcons.map((skill) => (
+              <div key={skill.index} className={css.skillItem}>
+                <i className={`${skill.icon} ${css.skillIcon}`} /> {skill.name}
+              </div>
+            ))}
+          </Marquee>
+        </>
       )}
     </div>
   );
