@@ -1,13 +1,10 @@
 {
   "files": {
-    "main.css": "/biegnaskip.com/static/css/main.429bab32.css",
-    "main.js": "/biegnaskip.com/static/js/main.8becc916.js",
+    "main.css": "/portfolio/tree/master/build/static/css/main.429bab32.css",
+    "main.js": "/portfolio/tree/master/build/static/js/main.8becc916.js",
     "index.html": "/biegnaskip.com/index.html",
-    "main.429bab32.css.map": "/biegnaskip.com/static/css/main.429bab32.css.map",
-    "main.8becc916.js.map": "/biegnaskip.com/static/js/main.8becc916.js.map"
+    "main.429bab32.css.map": "/portfolio/tree/master/build/static/css/main.429bab32.css.map",
+    "main.8becc916.js.map": "/portfolio/tree/master/build/static/js/main.8becc916.js.map"
   },
-  "entrypoints": [
-    "static/css/main.429bab32.css",
-    "static/js/main.8becc916.js"
-  ]
+  "entrypoints": ["static/css/main.429bab32.css", "static/js/main.8becc916.js"]
 }
