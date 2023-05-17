@@ -9,7 +9,7 @@ import Social from "./components/Social/Social";
 
 function App() {
   return (
-    <BrowserRouter basename="/portfolio">
+    <BrowserRouter>
       <Header />
       <AnimatedRoutes />
       <MobileMenu />
