@@ -2,15 +2,23 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: clamp(200px, 100%, 1000px);
+  width: clamp(200px, 100%, 1200px);
   flex-direction: column;
   gap: 1.5rem;
+  margin-inline: auto;
 }
 .text {
   width: clamp(200px, 80%, 1000px);
   text-align: center;
-  font-size: 1.2rem;
+  font-size: 0.8rem;
+  line-height: 1.2;
 }
 .link {
   text-decoration: underline;
+}
+@media (min-width: 768px) {
+  .text {
+    font-size: 1.2rem;
+    line-height: 1.5;
+  }
 }

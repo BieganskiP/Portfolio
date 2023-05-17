@@ -17,7 +17,7 @@ export default function ContactForm() {
 
     try {
       const response = await fetch(
-        "https://polar-hamlet-46572.herokuapp.com/contact",
+        "https://obscure-everglades-68412.herokuapp.com/contact",
         {
           method: "POST",
           headers: {
