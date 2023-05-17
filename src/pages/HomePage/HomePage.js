@@ -7,13 +7,13 @@ export default function HomePage() {
 
   const handleDownload = () => {
     const githubRawUrl =
-      "https://raw.githubusercontent.com/BieganskiP/portfolio/master/public/images/Patryk_Bieganski_Frontend-developer.pdf";
+      "https://raw.githubusercontent.com/BieganskiP/portfolio/master/public/images/Patryk_Bieganski_Fullstack.pdf";
 
     const link = document.createElement("a");
 
     link.href = githubRawUrl;
 
-    link.download = "Patryk_Bieganski_Frontend-developer.pdf";
+    link.download = "Patryk_Bieganski_Fullstack.pdf";
 
     link.click();
   };
