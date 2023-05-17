@@ -26,8 +26,8 @@ export default function HomePage() {
       </p>
       <p className={css.text}>Let's transform your ideas into reality.</p>
       <div className={css.buttons}>
-        <button className={css.cta} onClick={handleDownload} >
-          Download from GitHub
+        <button className={css.cta} onClick={handleDownload}>
+          Looking to hire?
         </button>
         <a href="#projects" className={css.cta}>
           Need a freelancer?
