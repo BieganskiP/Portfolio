@@ -22,7 +22,6 @@ export default function Header() {
           <Nav />
         </div>
       )}
-
       {!isMobile && (
         <div className={`${css.section} ${css.contact}`}>
           <ContactSection />

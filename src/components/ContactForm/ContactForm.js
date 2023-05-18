@@ -17,7 +17,7 @@ export default function ContactForm() {
 
     try {
       const response = await fetch(
-        "https://obscure-everglades-68412.herokuapp.com/contact",
+        " https://contact-form-mailer22111221.herokuapp.com/contact",
         {
           method: "POST",
           headers: {

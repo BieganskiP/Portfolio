@@ -1,5 +1,5 @@
 import React from "react";
-import css from "./Nav.module.css";
+import css from "../ContactSection/ContactSection.module.css";
 
 import { Link, useLocation } from "react-router-dom";
 

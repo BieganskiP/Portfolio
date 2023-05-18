@@ -22,6 +22,7 @@ body {
   color: var(--white);
   background: var(--backgroundFallback);
   background: var(--backgroundGradient);
+  background-repeat: no-repeat;
   overflow: hidden;
   display: flex;
 }

@@ -37,11 +37,6 @@
     top: 35%;
   }
 }
-@media (min-width: 770px) {
-  .container {
-    top: 50%;
-  }
-}
 @keyframes onEnter {
   from {
     translate: -80%;
